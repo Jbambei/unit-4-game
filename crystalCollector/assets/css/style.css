@@ -1,0 +1,91 @@
+body {
+    background-image: url(../images/amethystBackground.jpg)}
+    /* TODO: STRETCH TO FIT LATER */
+
+div {
+    background-color: white;
+    width: 25%;
+    margin: 10px;
+}
+
+/* has to be seperate from above div or it breaks */
+
+div { 
+    border: solid 2px black;
+	padding: 10px;
+}
+
+h1, h3, span {
+	font-weight: bold;
+    text-align: center;
+}
+    
+h1 {
+	font-size: 30pt;
+}
+
+/* creates bullet points and numbering for the instructions. */
+
+ol{
+	list-style: decimal inside; 
+}
+
+ul {
+    list-style: disc inside;
+    text-indent: 25px;
+}
+
+
+
+/* divs with a class */
+
+div.heading, div.gemstones{
+	background-color: #dbdbdf;
+}
+div.heading, div.instructions{
+    width: 50%;
+    height: auto
+}
+
+
+/* non-div classes */
+.winLoss {
+	float: left;
+	width: 20%;
+	height: 70px;
+}
+.gemstones {
+	clear: both;
+}
+.gemstoneImage {
+        height: auto; 
+        width: auto; 
+        max-width: 150px; 
+        max-height: 150px;
+}
+
+
+/* IDs */
+
+#instructionsBox {
+    background-color: white /* diamond won't show because white on white. rainbow diamond? */
+}
+
+#pointbox {
+	width: 25%;
+	height: 70px;
+}
+
+#blue{
+	color: blue;
+}
+#green{
+    color: green;
+   /* float: right */
+}
+#red{
+	color: red;
+}
+#white{
+	color: silver;
+}

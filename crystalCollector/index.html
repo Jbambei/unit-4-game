@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gemstone Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!--reset first so CSS sheet can override it-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="heading"> <!--should this be an ID?-->
+        <h1>Gemstone Game</h1>
+    </div>
+    <div class="instructions" id="instructionsBox"> <!--might want to be an ID-->
+        <h2>INSTRUCTIONS</h2> </br>
+
+        <ol>
+            <li>A random number will be generated for you at the beginning of each game. This is the TARGET number.
+            <li>There are four of the most well known gemstones below.</li>
+            <ul> <!--order doesn't matter here-->
+                <li id="red">Ruby</li>
+                <li id="blue">Sapphire</li>
+                <li id="green">Emerald</li>
+                <li id="white">Diamond</li>
+            </ul>
+            <li>Each crystal is worth a random amount of points each game.</li>
+            <li>You win when your total score is equal to the TARGET number.</li>
+            <li>You lose if your total score exceeds the TARGET score.</li>
+            <li>Each crystal will always give you the same amount of points within one game, so use that to your advantage.</li>
+        </ol>
+    </div>
+
+    <div class="targetNumber"> <!--win/loss box-->
+            <h2>TARGET: <span id="randomNumber"></span></h2>
+    </div>
+    <div class="winLoss">
+        <h2> Wins:  <span id="numberOfWins"></span>
+            <br>
+        Losses:  <span id="numberOfLosses"></span>
+        </h2>
+    </div>
+
+    <!--gemstone box-->
+    <div class="gemstones">
+        <img src="assets/images/ruby.png" class=gemstoneImage id= "rubyGem">
+		<img src="assets/images/sapphire.jpg" class=gemstoneImage id="sapphireGem">
+		<img src="assets/images/emerald.jpg" class=gemstoneImage id="emeraldGem">
+		<img src="assets/images/diamond.jpg" class=gemstoneImage id= "diamondGem">
+    </div>
+    
+    <!--point box-->
+    <div id="pointBox">
+        <h2>Your total score is:  <span id="totalScoreBox"></span>
+        </h2>
+    </div>
+    <!--links to $ and JS file-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
